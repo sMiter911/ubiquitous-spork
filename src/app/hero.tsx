@@ -9,18 +9,35 @@ function Hero() {
       <header className="grid !min-h-[49rem] bg-green-500 px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
           <div className="col-span-1">
-            <Typography variant="h1" color="white" className="mb-4">
+            <Typography 
+              variant="h1" 
+              color="white" 
+              className="mb-4"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               EXPLORE THE WORLD OF <br /> SIDE HUSTLING
             </Typography>
             <Typography
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
             >
               Shiphustle is a mobile application that connects individuals with
               side hustles to people looking for additional income opportunities
               in their local area.
             </Typography>
-            <Typography className="mb-4" color="white" variant="h6">
+            <Typography 
+              className="mb-4" 
+              color="white" 
+              variant="h6"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Get the app
             </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
@@ -42,6 +59,9 @@ function Hero() {
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
               >
                 <Image
                   width={256}
@@ -69,16 +89,22 @@ function Hero() {
             variant="h3"
             color="blue-gray"
             className="mb-3 dark:text-white"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Your Local Business Community is Here
           </Typography>
           <Typography
             variant="paragraph"
             className="font-normal !text-gray-500 dark:!text-gray-300 lg:w-5/12"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Shiphustle helps users discover and connect with nearby individuals
             who have listed their side hustles, providing a platform for
-            exploring various earning opportunities. Whether you're seeking
+            exploring various earning opportunities. Whether you&apos;re seeking
             part-time work, freelance gigs, or creative projects
           </Typography>
         </div>

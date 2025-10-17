@@ -31,8 +31,8 @@ export function Features() {
           onPointerLeaveCapture={() => { }}
         >
           Shiphustle is a directory of people with skills and talents in your local area.
-          Whether you're looking for someone to fix your car, design a logo, or bake a cake, you can find skilled people nearby.
-          It’s a simple way to connect with local customers, share updates, and chat in real time — all from your own ‘Hustle’ profile. Whether you're building a side hustle or growing a small business, Shiphustle is built to help you get seen and grow in your community.
+          Whether you&apos;re looking for someone to fix your car, design a logo, or bake a cake, you can find skilled people nearby.
+          It&apos;s a simple way to connect with local customers, share updates, and chat in real time — all from your own &apos;Hustle&apos; profile. Whether you&apos;re building a side hustle or growing a small business, Shiphustle is built to help you get seen and grow in your community.
         </Typography>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">

@@ -144,7 +144,7 @@ const ContactForm: FC = () => {
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
             >
-              I'm interested in premium features when available
+              I&apos;m interested in premium features when available
             </Typography>
           </div>
 

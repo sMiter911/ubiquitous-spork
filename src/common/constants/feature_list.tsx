@@ -16,7 +16,7 @@ export const FEATURE_LIST = [
     icon: HeartIcon,
     title: "Boost Your Items",
     children:
-      "Get your products and services noticed. Use the 'Boost' feature to increase visibility and reach more potential customers directly in the feed.",
+      "Get your products and services noticed. Use the &apos;Boost&apos; feature to increase visibility and reach more potential customers directly in the feed.",
   },
   {
     icon: LinkIcon,

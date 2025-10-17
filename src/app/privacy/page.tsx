@@ -11,7 +11,7 @@ const Privacy = () => {
       <p className="mb-6">
         At Shiphustle, we respect your privacy and are committed to protecting
         the personal information you provide while using our mobile application
-        ("App"). This Privacy Policy outlines the types of information we
+        (&quot;App&quot;). This Privacy Policy outlines the types of information we
         collect, how we use it, and the choices you have regarding your personal
         data. By using Shiphustle, you agree to the collection and use of your
         information as described in this policy.
@@ -44,7 +44,7 @@ const Privacy = () => {
       <p className="mb-4">
         We collect certain information automatically when you use the App,
         including your device type, operating system, IP address, and browsing
-        activity. This information helps us improve the App's functionality,
+        activity. This information helps us improve the App&apos;s functionality,
         personalize your experience, and analyze trends.
       </p>
 
@@ -118,7 +118,7 @@ const Privacy = () => {
         When you use Shiphustle, certain information about you, such as your
         username, profile picture, and user-generated content, may be visible to
         other users of the App. Please exercise caution when sharing personal
-        information through the App's communication features.
+        information through the App&apos;s communication features.
       </p>
 
       <h3 className="text-lg font-semibold mb-2">3.3 Legal Requirements:</h3>
@@ -137,7 +137,7 @@ const Privacy = () => {
         security.
       </p>
 
-      <h2 className="text-xl font-semibold mb-4">Children's Privacy</h2>
+      <h2 className="text-xl font-semibold mb-4">Children&apos;s Privacy</h2>
       <p className="mb-4">
         Shiphustle is not intended for individuals under the age of 18. We do
         not knowingly collect or solicit personal information from anyone under

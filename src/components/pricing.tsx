@@ -92,7 +92,7 @@ export function Pricing() {
                         onPointerEnterCapture={() => { }}
                         onPointerLeaveCapture={() => { }}
                     >
-                        Start free and upgrade when you're ready to grow
+                        Start free and upgrade when you&apos;re ready to grow
                     </Typography>
                 </div>
 
