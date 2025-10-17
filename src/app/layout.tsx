@@ -10,8 +10,21 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Shiphustle",
-  description: "EXPLORE THE WORLD OF SIDE HUSTLING.",
+  title: "ShipHustle - Side Hustling to the Next Level",
+  description: "ShipHustle is a directory of people with skills and talents in your local area. Connect with local customers, share updates, and grow your side hustle.",
+  keywords: "side hustle, local business, gig economy, skills directory, community",
+  authors: [{ name: "ShipHustle Team" }],
+  creator: "ShipHustle",
+  publisher: "ShipHustle",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logos/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/logos/icon.png", sizes: "180x180" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +42,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/logos/icon.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/logos/icon.png" sizes="180x180" />
       </head>
       <body className={roboto.className}>
         <Layout>{children}</Layout>

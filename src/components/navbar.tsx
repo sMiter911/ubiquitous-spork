@@ -94,7 +94,7 @@ export function Navbar() {
         >
           <Link href="#">Home</Link>
           <Link href="#features">About Us</Link>
-          <Link href="#features">Gallery</Link>
+          <Link href="#gallery">Gallery</Link>
           <Link href="#pricing">Pricing</Link>
           <Link href="#contact">Contact Us</Link>
         </ul>
