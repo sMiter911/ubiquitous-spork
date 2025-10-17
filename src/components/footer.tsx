@@ -1,27 +1,50 @@
 "use client";
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
-const LINKS = ["Privacy Policy"];
 const CURRENT_YEAR = new Date().getFullYear();
+
+const footerLinks = [
+  { name: "Terms & Conditions", href: "/terms" },
+  { name: "Privacy", href: "/privacy" },
+  { name: "Refunds & Cancellation", href: "/refunds" },
+];
 
 export function Footer() {
   return (
-    <footer className="mt-10 px-8 py-30">
-      <div className="container mx-auto">
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
-          <Typography className="text-center font-normal !text-white">
-            &copy; {CURRENT_YEAR} Shiphustle. All rights reserved.
+    <footer className="bg-gray-800 py-6">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+          <Typography
+            variant="small"
+            className="text-gray-300 font-normal"
+            placeholder=""
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }}
+          >
+            © {CURRENT_YEAR} Shiphustle. All rights reserved.
           </Typography>
-          <ul className="flex gap-8 items-center">
-            <Typography
-              as="a"
-              href="/privacy"
-              variant="small"
-              className="font-normal text-white hover:text-gray-900 transition-colors"
-            >
-              Privacy Policy
-            </Typography>
-          </ul>
+
+          <div className="flex items-center gap-1 text-gray-300">
+            <span className="text-gray-400">|</span>
+            {footerLinks.map((link, index) => (
+              <div key={link.name} className="flex items-center">
+                <Typography
+                  as="a"
+                  href={link.href}
+                  variant="small"
+                  className="text-green-400 hover:text-green-300 transition-colors font-normal mx-2"
+                  placeholder=""
+                  onPointerEnterCapture={() => { }}
+                  onPointerLeaveCapture={() => { }}
+                >
+                  {link.name}
+                </Typography>
+                {index < footerLinks.length - 1 && (
+                  <span className="text-gray-400">|</span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

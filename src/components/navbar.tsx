@@ -8,6 +8,8 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
+import { ThemeToggle } from "./theme-toggle";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -22,6 +24,9 @@ function NavItem({ children, href }: NavItemProps) {
         target={href ? "_blank" : "_self"}
         variant="small"
         className="font-medium"
+        placeholder=""
+        onPointerEnterCapture={() => { }}
+        onPointerLeaveCapture={() => { }}
       >
         {children}
       </Typography>
@@ -65,24 +70,32 @@ export function Navbar() {
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
+      placeholder=""
+      onPointerEnterCapture={() => { }}
+      onPointerLeaveCapture={() => { }}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          as="a"
+        <a
           href="https://www.material-tailwind.com"
           target="_blank"
-          variant="h6"
-          color={isScrolling ? "gray" : "white"}
+          className="flex items-center"
         >
-          ShipHustle
-        </Typography>
+          <Image
+            src="/logos/icon.png"
+            alt="ShipHustle"
+            width={40}
+            height={40}
+            className="h-10 w-auto"
+          />
+        </a>
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
+          className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
+            }`}
         >
           <Link href="#">Home</Link>
           <Link href="#features">About Us</Link>
+          <Link href="#features">Gallery</Link>
+          <Link href="#pricing">Pricing</Link>
           <Link href="#contact">Contact Us</Link>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
@@ -90,6 +103,10 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
+            ripple={false}
+            placeholder=""
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }}
           >
             <a
               href="https://x.com/shiphustle"
@@ -103,6 +120,10 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
+            ripple={false}
+            placeholder=""
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }}
           >
             <a
               href="https://www.facebook.com/profile.php?id=100093340880611"
@@ -119,12 +140,17 @@ export function Navbar() {
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton> */}
+          <ThemeToggle />
         </div>
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
+          ripple={false}
+          placeholder=""
+          onPointerEnterCapture={() => { }}
+          onPointerLeaveCapture={() => { }}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -138,13 +164,31 @@ export function Navbar() {
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <Link href="#">Home</Link>
             <Link href="#features">About Us</Link>
+            <Link href="#features">Gallery</Link>
+            <Link href="#pricing">Pricing</Link>
             <Link href="#contact">Contact Us</Link>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton
+              variant="text"
+              color="gray"
+              size="sm"
+              ripple={false}
+              placeholder=""
+              onPointerEnterCapture={() => { }}
+              onPointerLeaveCapture={() => { }}
+            >
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton
+              variant="text"
+              color="gray"
+              size="sm"
+              ripple={false}
+              placeholder=""
+              onPointerEnterCapture={() => { }}
+              onPointerLeaveCapture={() => { }}
+            >
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
             {/* <IconButton variant="text" color="gray" size="sm">

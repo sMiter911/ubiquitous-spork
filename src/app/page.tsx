@@ -2,6 +2,7 @@
 import { Navbar } from "@/components";
 import Hero from "./hero";
 import Features from "./features";
+import Pricing from "@/components/pricing";
 import ContactForm from "./contact-form";
 import Footer from "@/components/footer";
 
@@ -13,7 +14,9 @@ export default function Campaign() {
       <Navbar />
       <Hero />
       <Features />
+      <Pricing />
       <ContactForm />
+      <Footer />
     </>
   );
 }

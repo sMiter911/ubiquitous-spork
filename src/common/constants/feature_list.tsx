@@ -1,33 +1,33 @@
 import {
-  CursorArrowRaysIcon,
   HeartIcon,
   LightBulbIcon,
-  LockClosedIcon,
+  BuildingStorefrontIcon,
+  LinkIcon
 } from "@heroicons/react/24/solid";
 
 export const FEATURE_LIST = [
   {
-    icon: CursorArrowRaysIcon,
-    title: "Lorem ipsum odor amet.",
+    icon: BuildingStorefrontIcon,
+    title: "Build Your Storefront",
     children:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.",
+      "Create a beautiful profile for your business. Add service menus, list products with prices, and show customers what you offer.",
   },
   {
     icon: HeartIcon,
-    title: "Sed ut perspiciatis",
+    title: "Boost Your Items",
     children:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.",
+      "Get your products and services noticed. Use the 'Boost' feature to increase visibility and reach more potential customers directly in the feed.",
   },
   {
-    icon: LockClosedIcon,
-    title: "Li Europan lingues",
+    icon: LinkIcon,
+    title: "Connect & Collaborate",
     children:
-      "Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.",
+      "Engage with your audience through posts, replies, and direct messaging. Follow other creators and build your network.",
   },
   {
     icon: LightBulbIcon,
-    title: "A wonderful serenity",
+    title: "AI-Powered Support",
     children:
-      "Li Europan lingues es membres del sam familie. Lor separate existentie es un myth. Por scientie, musica, sport etc.",
+      "Get intelligent assistance with descriptions, content creation, and business optimization to help your hustle stand out.",
   },
 ];

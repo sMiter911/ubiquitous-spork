@@ -24,7 +24,7 @@ function Hero() {
               Get the app
             </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
-              <Button
+              {/* <Button
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
@@ -37,7 +37,7 @@ function Hero() {
                   className="w-6 h-6"
                 />
                 App Store
-              </Button>
+              </Button> */}
               <Button
                 size="lg"
                 color="white"
@@ -57,20 +57,24 @@ function Hero() {
           <Image
             width={470}
             height={576}
-            src="/image/iphones.png"
+            src="/image/SH-app-2-Photoroom.png"
             alt="team work"
             className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
           />
         </div>
       </header>
-      <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
+      <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white dark:bg-gray-900 p-5 md:p-14 shadow-md">
         <div>
-          <Typography variant="h3" color="blue-gray" className="mb-3">
-            Shiphustle App
+          <Typography
+            variant="h3"
+            color="blue-gray"
+            className="mb-3 dark:text-white"
+          >
+            Your Local Business Community is Here
           </Typography>
           <Typography
             variant="paragraph"
-            className="font-normal !text-gray-500 lg:w-5/12"
+            className="font-normal !text-gray-500 dark:!text-gray-300 lg:w-5/12"
           >
             Shiphustle helps users discover and connect with nearby individuals
             who have listed their side hustles, providing a platform for
